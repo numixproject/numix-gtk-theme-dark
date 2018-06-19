@@ -1,4 +1,4 @@
-# Numix Dark GTK Theme
+# Numix GTK Theme
 
 gtk-color-scheme = "bg_color:#2d2d2d\nfg_color:#dcdcdc\nbase_color:#333333\ntext_color:#dedede\nselected_bg_color:#d64937\nselected_fg_color:#f9f9f9\ntooltip_bg_color:#2d2d2d\ntooltip_fg_color:#dedede\ntitlebar_bg_color:#2d2d2d\ntitlebar_fg_color:#dcdcdc\nmenubar_bg_color:#2d2d2d\nmenubar_fg_color:#dcdcdc\ntoolbar_bg_color:#2d2d2d\ntoolbar_fg_color:#dcdcdc\nmenu_bg_color:#2d2d2d\nmenu_fg_color:#dcdcdc\npanel_bg_color:#2d2d2d\npanel_fg_color:#dcdcdc\nlink_color:#fc6f5d"
 
@@ -528,15 +528,27 @@ style "xfdesktop-icon-view" {
 }
 
 style "xfwm-tabwin" {
-	Xfwm4TabwinWidget::border-width = 0
+	Xfwm4TabwinWidget::border-width = 1
+        Xfwm4TabwinWidget::border-alpha = 1.0
 	Xfwm4TabwinWidget::icon-size = 64
+        Xfwm4TabwinWidget::alpha = 1.0
+        Xfwm4TabwinWidget::border-radius = 2
 
 	bg[NORMAL] = @menu_bg_color
+	bg[SELECTED] = @menu_bg_color
+
 	fg[NORMAL] = @menu_fg_color
 
 	engine "murrine" {
-		focusstyle = 0
+		contrast = 0.0
+		border_shades = { 0.9, 0.9 }
 	}
+}
+
+style "xfwm-tabwin-button" {
+        font_name = "bold"
+
+	bg[SELECTED] = @selected_bg_color
 }
 
 style "xfsm-logout" {
@@ -759,5 +771,6 @@ widget_class "*XfceHeading*" style "xfce-header"
 widget_class "*XfceDesktop*" style "xfdesktop-windowlist"
 widget_class "*XfdesktopIconView*" style "xfdesktop-icon-view"
 widget "xfwm4-tabwin*" style "xfwm-tabwin"
+widget "xfwm4-tabwin*GtkButton*" style "xfwm-tabwin-button"
 widget_class "*XfsmLogoutDialog*" style "xfsm-logout"
 widget_class "*XfsmLogoutDialog*GtkButton" style "xfsm-logout-button"
