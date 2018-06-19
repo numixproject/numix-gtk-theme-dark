@@ -20,10 +20,6 @@ xfconf-query -c xsettings -p /Net/ThemeName -s "Numix Dark"
 xfconf-query -c xfwm4 -p /general/theme -s "Numix Dark"
 ```
 
-### Support
-
-Please a drop a mail to team@numixproject.org if you have any problems or queries. We'll try to respond as quickly as possible.
-
 ### Requirements
 
 GTK+ 3.6 or above
