@@ -1,6 +1,8 @@
-Numix Dark is a modern flat theme and dark variant of Numix. It supports Gnome, Unity, XFCE and Openbox.
+# Numix Dark
+A modern flat theme with dark elements. It supports GNOME, Unity, Xfce and Openbox. Unlike our [main theme](https://github.com/numixproject/numix-gtk-theme) which support up to GTK 3.24, this theme is still stuck at 3.14 and below. We've just open sourced it so stay tuned for updates!
 
-Numix Dark is a part of the [Numix Project](http://numixproject.org).
+[![By The Numix Project](https://img.shields.io/badge/By-The%20Numix%20Project-f0544c.svg?style=flat-square)](https://numixproject.org/) &nbsp;![Supports GTK+ 3.14](https://img.shields.io/badge/GTK%2B-3.14-4a90d9.svg?style=flat-square)
+
 
 ### Manual installation
 
@@ -28,6 +30,6 @@ Murrine theme engine
 
 ### Code and license
 
-Report bugs or contribute at [GitHub](https://github.com/shimmerproject/Numix)
+Report bugs or contribute at [GitHub](https://github.com/numixproject/numix-gtk-theme)
 
 License: GPL-3.0+
